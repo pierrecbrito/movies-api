@@ -4,6 +4,8 @@ import config from 'config';
 const app = express();
 app.use(express.json());
 
-app.listen(3000, async () => {
-    console.log(`Server is running on port 3000`);
+const PORT = config.get<number>('port');
+
+app.listen(PORT, async () => {
+    console.log(`Server is running on port ${PORT}`);
 });
