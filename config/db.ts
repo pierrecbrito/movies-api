@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import config from "config";
+import Logger from "./logger";
 
 async function connectDB() {
   const dbUri = config.get<string>("dbUri");
@@ -7,10 +8,10 @@ async function connectDB() {
   try {
     console.log(dbUri)
     await mongoose.connect(dbUri);
-    console.log("Database connected");
+    Logger.info("Database connected");
   } catch (error) {
-    console.error("Error connecting to the database");
-    console.error(error);
+    Logger.error("Error connecting to the database");
+    Logger.error(error);
   }
 }
 
