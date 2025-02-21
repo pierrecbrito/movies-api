@@ -124,3 +124,15 @@
 2025-02-20 22:55:51:5551 [32minfo[39m: [32mServer is running on port 3000[39m
 2025-02-20 22:55:53:5553 [35mhttp[39m: [35mGET /api/movie/67b7dcdd9d7627cf90dba420 200 277 - 70.708 ms[39m
 [35m[39m
+2025-02-20 22:57:25:5725 [32minfo[39m: [32mDatabase connected[39m
+2025-02-20 22:57:25:5725 [32minfo[39m: [32mServer is running on port 3000[39m
+2025-02-20 22:57:39:5739 [32minfo[39m: [32mDatabase connected[39m
+2025-02-20 22:57:39:5739 [32minfo[39m: [32mServer is running on port 3000[39m
+2025-02-20 22:58:03:583 [35mhttp[39m: [35mGET /api/movie 404 148 - 1.406 ms[39m
+[35m[39m
+2025-02-20 22:58:26:5826 [32minfo[39m: [32mDatabase connected[39m
+2025-02-20 22:58:26:5826 [32minfo[39m: [32mServer is running on port 3000[39m
+2025-02-20 22:58:26:5826 [35mhttp[39m: [35mGET /api/movie 404 148 - 1.242 ms[39m
+[35m[39m
+2025-02-20 22:58:32:5832 [35mhttp[39m: [35mGET /api/movies 200 879 - 68.572 ms[39m
+[35m[39m
