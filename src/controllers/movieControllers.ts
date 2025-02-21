@@ -37,3 +37,19 @@ export async function getAllMovies(req: Request, res: Response): Promise<any> {
         res.status(500).json({message: 'Internal server error'});
     }
 }
+
+export async function removeMovie(req: Request, res: Response): Promise<any> {
+    try {
+        const {id} = req.params;
+        const movie = await MovieModel.findByIdAndDelete(id);
+        if (!movie) {
+            return res.status(404).json({message: 'Movie not found'});
+        }
+        
+        res.status(200).json({message: 'Movie removed'});
+    }
+    catch (error) {
+        Logger.error(error);
+        res.status(500).json({message: 'Internal server error'});
+    }   
+}
