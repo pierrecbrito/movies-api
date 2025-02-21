@@ -150,3 +150,13 @@
 [35m[39m
 2025-02-20 23:03:56:356 [32minfo[39m: [32mDatabase connected[39m
 2025-02-20 23:03:56:356 [32minfo[39m: [32mServer is running on port 3000[39m
+2025-02-20 23:04:18:418 [32minfo[39m: [32mDatabase connected[39m
+2025-02-20 23:04:18:418 [32minfo[39m: [32mServer is running on port 3000[39m
+2025-02-20 23:04:42:442 [35mhttp[39m: [35mPOST /api/movie 201 277 - 76.627 ms[39m
+[35m[39m
+2025-02-20 23:05:03:53 [35mhttp[39m: [35mGET /api/movie/67b7df3abd3824f7e07eeed9 200 277 - 63.368 ms[39m
+[35m[39m
+2025-02-20 23:06:11:611 [35mhttp[39m: [35mPATCH /api/movie/67b7df3abd3824f7e07eeed9 200 277 - 66.819 ms[39m
+[35m[39m
+2025-02-20 23:06:16:616 [35mhttp[39m: [35mGET /api/movie/67b7df3abd3824f7e07eeed9 200 277 - 59.459 ms[39m
+[35m[39m
