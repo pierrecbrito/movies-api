@@ -27,3 +27,5 @@
 [35m[39m
 2025-02-20 21:54:36:5436 [35mhttp[39m: [35mPOST /api/movie 200 9 - 0.340 ms[39m
 [35m[39m
+2025-02-20 21:57:06:576 [32minfo[39m: [32mDatabase connected[39m
+2025-02-20 21:57:06:576 [32minfo[39m: [32mServer is running on port 3000[39m
