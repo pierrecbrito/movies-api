@@ -3,9 +3,11 @@ import express from 'express';
 import config from 'config';
 import db from '../config/db';
 import Logger from '../config/logger';
+import morganMiddleware from './middleware/morgaMiddleware';
 
 const app = express();
 app.use(express.json());
+app.use(morganMiddleware);
 
 import router from './router';
 app.use('/api/', router);
