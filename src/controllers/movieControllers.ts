@@ -13,3 +13,17 @@ export  async function createMovie(req: Request, res: Response) {
         res.status(500).json({message: 'Internal server error'});
     }
 }
+
+export async function findMovieById(req: Request, res: Response): Promise<any> {
+    try {
+        const {id} = req.params;
+        const movie = await MovieModel.findById(id);
+        if (!movie) {
+            return res.status(404).json({message: 'Movie not found'});
+        }
+        res.status(200).json(movie);
+    } catch (error) {
+        Logger.error(error);
+        res.status(500).json({message: 'Internal server error'});
+    }
+}
