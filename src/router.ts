@@ -1,5 +1,11 @@
 import {Router, Request, Response} from 'express';
-import {createMovie, findMovieById, getAllMovies, removeMovie, updateMovie} from './controllers/movieControllers';
+import {
+    createMovie, 
+    findMovieById, 
+    getAllMovies, 
+    removeMovie, 
+    updateMovie
+} from './controllers/movieControllers';
 import {validate} from './middleware/handleValidator';
 import {movieCreateValidation} from './middleware/movieValidation';
 
