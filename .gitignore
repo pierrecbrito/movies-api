@@ -7,3 +7,5 @@ yarn-error.log
 default.ts
 logs/
 *.log
+all.log
+error.log
